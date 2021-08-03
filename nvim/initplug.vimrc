@@ -7,8 +7,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'lambdalisue/glyph-palette.vim'
     Plug 'lambdalisue/nerdfont.vim'
     Plug 'ryanoasis/vim-devicons'
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-    Plug 'junegunn/fzf.vim'
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
     Plug 'jiangmiao/auto-pairs'
     Plug 'machakann/vim-sandwich'
     Plug 'tpope/vim-sleuth'
@@ -21,6 +22,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'kevinoid/vim-jsonc'
+    Plug 'sainnhe/sonokai'
 call plug#end()
 
 let g:ale_disable_lsp = 1

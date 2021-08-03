@@ -11,3 +11,5 @@ set autoindent
 set number
 set wildmode=longest,list
 set hidden
+
+colorscheme sonokai
