@@ -1,14 +1,24 @@
-filetype plugin indent on
+lua require 'init'
+
 syntax on
 
-" Init contains Plugins and ale
-source $HOME/.config/nvim/initplug.vimrc
-" Keys contains keybindings
-source $HOME/.config/nvim/keys.vimrc
-" Airline contains the airlines (status lines) config
-source $HOME/.config/nvim/airline.vimrc
-" General contains general commands, such as tabs
-source $HOME/.config/nvim/general.vimrc
-" plugin holds all plugins settings
-source $HOME/.config/nvim/plugin.vimrc
+set nocompatible
+set showmatch
+set ignorecase
+set mouse=a
+set hlsearch
+set tabstop=4
+set softtabstop=4
+set expandtab
+set shiftwidth=4
+set autoindent
+set number
+set wildmode=longest,list
+set hidden
+set timeoutlen=2000
 
+"Treesitter stuff
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+
+source $HOME/.config/nvim/keys.vimrc
