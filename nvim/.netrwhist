@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
-let g:netrw_dirhist_7='/home/dkmiraidk/Documents/AAU/6th-semester/p6presentation/setup'
-let g:netrw_dirhist_6='/home/dkmiraidk/Documents/AAU/6th-semester/p6rapport/acmart/frontmatter'
-let g:netrw_dirhist_5='/home/dkmiraidk/Documents/AAU/6th-semester/p6rapport/acmart'
-let g:netrw_dirhist_4='/home/dkmiraidk/Documents/AAU/6th-semester/p6rapport/chapters'
-let g:netrw_dirhist_3='/home/dkmiraidk/Documents/AAU/6th-semester/p6rapport/chapters/languagedef'
-let g:netrw_dirhist_2='/etc/X11/xorg.conf.d'
-let g:netrw_dirhist_1='/home/dkmiraidk/.config/coc/extensions/node_modules/coc-clangd'

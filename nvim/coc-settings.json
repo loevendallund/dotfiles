@@ -1,0 +1,112 @@
+{
+	"suggest.pumFloatConfig": { "border": true, "winblend": 1 },
+	"floatFactory.floatConfig": { "border": true },
+	"suggest.enableFloat": true,
+	"suggest.floatConfig": { "border": true },
+	"hover.floatConfig": {"border": true,},
+	"languageserver": {
+		"haskell": {
+			"command": "haskell-language-server-wrapper",
+			"args": ["--lsp"],
+			"rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+			"filetypes": ["haskell", "lhaskell"]
+		},
+		/*"csharp": {
+			"command": "csharp-ls",
+			"rootPatterns": ["*.sln", "git/", "*.csproj", ".vim/", ".hg/"],
+			"filetypes": ["cs", "csharp"]
+		}*/
+
+		/*"rescript": {
+			"enable": true,
+			"module": "~/.local/share/nvim/site/pack/packer/start/vim-rescript/server/out/server.js",
+			"args": ["--node-ipc"],
+			"filetypes": ["rescript"],
+			"rootPatterns": ["bsconfig.json"]
+		}*/
+  },
+	"java.imports.gradle.wrapper.checksums": [
+		{
+     		"sha256": "2cae31aaabe2b362438e10dce5538f9a554e183056485df883f45aee08a008e0",
+			"allowed": true
+		}
+	],
+  "Lua.telemetry.enable": false,
+  "diagnostic.displayByAle": true,
+  "java.import.gradle.java.home": "/usr/lib/jvm/java-11-openjdk",
+
+  "jedi.enable": true,
+  "jedi.startupMessage": false,
+  "jedi.markupKindPreferred": "plaintext",
+  "jedi.trace.server": "off",
+  "jedi.jediSettings.autoImportModules": [],
+  "jedi.jediSettings.caseInsensitiveCompletion": true,
+  "jedi.jediSettings.debug": false,
+  "jedi.executable.command": "~/.local/bin/jedi-language-server",
+  "jedi.executable.args": [],
+  "jedi.codeAction.nameExtractFunction": "jls_extract_def",
+  "jedi.codeAction.nameExtractVariable": "jls_extract_var",
+  "jedi.completion.disableSnippets": false,
+  "jedi.completion.resolveEagerly": false,
+  "jedi.completion.ignorePatterns": [],
+  "jedi.diagnostics.enable": true,
+  "jedi.diagnostics.didOpen": true,
+  "jedi.diagnostics.didChange": true,
+  "jedi.diagnostics.didSave": true,
+  "jedi.hover.enable": true,
+  "jedi.hover.disable.keyword.all": false,
+  "jedi.hover.disable.keyword.names": [],
+  "jedi.hover.disable.keyword.fullNames": [],
+  "jedi.workspace.extraPaths": [],
+  "jedi.workspace.environmentPath": "/usr/",
+  "jedi.workspace.symbols.maxSymbols": 20,
+  "jedi.workspace.symbols.ignoreFolders": [
+    ".nox",
+    ".tox",
+    ".venv",
+    "__pycache__",
+    "venv"
+  ],
+  "angular.enable-strict-mode-prompt": false,
+  "diagnostic-languageserver.filetypes": {
+    "python": "pylint"
+  },
+  "diagnostic-languageserver.linters": {
+    "pylint": {
+      "sourceName": "pylint",
+      "command": "pylint",
+      "debounce": 100,
+      "args": [
+        "--output-format",
+        "text",
+        "--score",
+        "no",
+        "--msg-template",
+        "'{line}:{column}:{category}:{msg} ({msg_id}:{symbol})'",
+        "%file"
+      ],
+      "formatPattern": [
+        "^(\\d+?):(\\d+?):([a-z]+?):(.*)$",
+        {
+          "line": 1,
+          "column": 2,
+          "endColumn": 2,
+          "security": 3,
+          "message": 4
+        }
+      ],
+      "rootPatterns": ["pyproject.toml", "setup.py", ".git"],
+      "securities": {
+        "informational": "hint",
+        "refactor": "info",
+        "convention": "info",
+        "warning": "warning",
+        "error": "error",
+        "fatal": "error"
+      },
+      "offsetColumn": 1,
+      "offsetColumnEnd": 1,
+      "formatLines": 1
+    }
+  }
+}
